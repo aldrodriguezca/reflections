@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	Cuando se inicializa un repositorio git queda preparado para hacer commits con el trabajo que se vaya
+	realizando en ese repositorio. Se necesita para que Git lo reconozca como un directorio que <le compete> 
+	y pueda rastrear los archivos en dicho directorio.
+
