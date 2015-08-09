@@ -7,4 +7,13 @@
   
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 	
-	Pueden presnetarse conflictos que deberiamos solucionar antes de importar cambios a nuestro working directory
+	Pueden presentarse conflictos que deberiamos solucionar antes de importar cambios a nuestro working directory
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	Forks: Basicamente es lo mismo que un clone, con la diferencia que se presenta unicamente en directorios remotos
+		presentes en GitHub; esto nos permite trabajar sobre repositorios sobre los que normalmente no 
+		se tiene permiso.
+	Clones:  Copias exactas  de un repositorio, presentes en directorios locales o en repositorios remotos.
+	Branches: Bifuraciones presentadas tanto en directorios locales como en repositorios remotos si se cargan los cambios
+	
