@@ -4,3 +4,41 @@ What happens when you initialize a repository? Why do you need to do it?
 	realizando en ese repositorio. Se necesita para que Git lo reconozca como un directorio que <le compete> 
 	y pueda rastrear los archivos en dicho directorio.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	
+	- La staging area difiere del working directory en que en este último puede haber (usualmente) archivos
+	untracked y en la staging area se encuentran solamente los archivos sobre los que estamos trabajando en el momento
+	o sobre los cuales se quieren guardar cambios.
+	- Permite que no todos los archivos que están en el working directory sean commited, solo los deseados
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Comparando lo que está en la staging area (listo para hacer commit) con lo que está en el working directory
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Cuando se quiere trabajar en una versión experimental, que no estamos seguros de que funciona como debería
+	o tal vez en alguna versión con características adicionales (pero opcionales) que probablemente borremos 
+	en el futuro, etc.
+	También cuando se hace trabajo colaborativo, los integrantes del equipo pueden trabajar con tranquilidad
+	sin "pisarse las mangueras" y permite unir los cambios pertinentes a la rama principal de ser pertinente
+
+How do the diagrams help you visualize the branch structure?
+
+	Los diagramas pueden ser muy utiles en caso de no saber "en donde se está parado", así se puede saber cual es el 
+	padre del commit actual y hasta donde podemos volver, o si podemos crear una nueva branch o no es conveniente.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	Cuando se unen 2 branches, se crea una sola, la cual "recuerda" el historial de ambas pero organiza los 
+	commits de acuerdo a su fecha de creación	
+	Los diagramas son representados de esa manera debido a que permiten entenderlos con claridad 
+	y nos da una idea acertada acerca de como están organizados los commits de las respectivas branches
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	pros - Con automatic merging simplemente se corre el comando git merge branchName1 branchName2 
+		sin embargo no es posible hacerlo siempre, debido a que se pueden presentar conflictos 
+		donde ambas ramas modifican la misma área de código así que Git no sabría cual elegir automáticamente
+	cons - Seguramente la desventaja de merge manualmente es de tiempo, debido que hay que notar (buscar) diferencias
+		y eso puede ocurrir cuando se trabaja en un archivo con cientos, incluso miles de líneas de código
