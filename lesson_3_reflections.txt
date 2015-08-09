@@ -1,7 +1,10 @@
-When would you want to use a remote repository rather than keeping all your work local?
+﻿When would you want to use a remote repository rather than keeping all your work local?
   
   Seguramente el caso más común para utilizar repositorios remotos sea cuando se trabaja en proyectos <colaborativos> en los cuales 
   se desea compartir el trabajo realizado con otras personas pertenecientes al mismo -equipo de trabajo-.
   Además si se desea acceder al trabajo desde lugares distintos a nuestro propio computador personal un repositorio remoto nos permite 
   hacerlo.
   
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+	
+	Pueden presnetarse conflictos que deberiamos solucionar antes de importar cambios a nuestro working directory
