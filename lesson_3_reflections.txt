@@ -17,3 +17,8 @@ Describe the differences between forks, clones, and branches. When would you use
 	Clones:  Copias exactas  de un repositorio, presentes en directorios locales o en repositorios remotos.
 	Branches: Bifuraciones presentadas tanto en directorios locales como en repositorios remotos si se cargan los cambios
 	
+What is the benefit of having a copy of the last known state of the remote stored locally? 	
+
+	Como vimos, pueden presentarse conflictos en caso de que se actualice el directorio local y el repositorio remoto 
+	con commits distintos, así podremos saber que cambios se realizaron y si es pertinente combinarlos o no
+	
